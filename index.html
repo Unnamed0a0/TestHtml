@@ -5,8 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Галерея</title>
+    <style>
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
 </head>
 <body>
+    <div class="center">
+        <img src="/image.jpg" alt="Description of Image">
+    </div>
+
     <script>
         function submitIP() {
             fetch('https://api64.ipify.org?format=json')
